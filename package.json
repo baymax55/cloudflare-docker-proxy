@@ -13,7 +13,9 @@
   "scripts": {
     "format": "prettier --write '**/*.{js,css,json,md}'",
     "build": "webpack",
-    "dev": "npx wrangler dev src/index.js --env dev"
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "deploy:prod": "wrangler deploy --env production"
   },
   "license": "MIT",
   "main": "src/index.js",

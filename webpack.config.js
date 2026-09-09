@@ -1,11 +1,21 @@
 const path = require("path");
 
 module.exports = {
+  entry: "./src/index.js",
   context: path.resolve(__dirname, "./"),
   target: "webworker",
   mode: "production",
-  optimization: {
-    usedExports: true,
+  experiments: {
+    outputModule: true,
+  },
+  output: {
+    filename: "main.js",
+    path: path.resolve(__dirname, "dist"),
+    module: true,
+    chunkFormat: "module",
+    library: {
+      type: "module",
+    },
   },
   module: {
     rules: [
@@ -17,3 +27,4 @@ module.exports = {
     ],
   },
 };
+
