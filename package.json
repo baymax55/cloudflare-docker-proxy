@@ -4,7 +4,6 @@
   "description": "",
   "version": "1.0.0",
   "author": "ciiiii <allen.cccccnm@gmail.com>",
-  "dependencies": {},
   "devDependencies": {
     "prettier": "^2.4.1",
     "webpack": "^5.65.0",
@@ -17,5 +16,9 @@
     "dev": "npx wrangler dev src/index.js --env dev"
   },
   "license": "MIT",
-  "main": "src/index.js"
+  "main": "src/index.js",
+  "packageManager": "yarn@4.5.0+sha512.837566d24eec14ec0f5f1411adb544e892b3454255e61fdef8fd05f3429480102806bac7446bc9daff3896b01ae4b62d00096c7e989f1596f2af10b927532f39",
+  "dependencies": {
+    "yarn": "^1.22.22"
+  }
 }
